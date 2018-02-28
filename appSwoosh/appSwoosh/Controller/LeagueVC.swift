@@ -35,4 +35,15 @@ class LeagueVC: UIViewController {
         player.desiredLeage = leagueType
         btnNext.isEnabled = true
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "fromLeagueToSkill") {
+            let skillController = segue.destination as! SkillVC
+            skillController.player = self.player
+        }
+    }
+    
+    @IBAction func unwindFrom(unwindSegue: UIStoryboardSegue){
+        
+    }
 }
