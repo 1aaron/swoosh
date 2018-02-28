@@ -150,6 +150,9 @@
                                         <state key="normal" title="Men">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="optionTappedWithSender:" destination="S8m-9S-9UV" eventType="touchUpInside" id="17S-85-YQT"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BPV-Bb-Obg" customClass="BorderButton" customModule="appSwoosh" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="70" width="394" height="50"/>
@@ -162,6 +165,9 @@
                                         <state key="normal" title="Women">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="optionTappedWithSender:" destination="S8m-9S-9UV" eventType="touchUpInside" id="Msb-hb-Fjq"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0wn-6I-VLm" customClass="BorderButton" customModule="appSwoosh" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="140" width="394" height="50"/>
@@ -174,11 +180,14 @@
                                         <state key="normal" title="Co-ed">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="optionTappedWithSender:" destination="S8m-9S-9UV" eventType="touchUpInside" id="FnN-RG-SRr"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.60033176369863017" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9a9-ik-y1M" customClass="BorderButton" customModule="appSwoosh" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9a9-ik-y1M" customClass="BorderButton" customModule="appSwoosh" customModuleProvider="target">
                                 <rect key="frame" x="10" y="666" width="394" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.60033176369863017" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -188,6 +197,9 @@
                                 <state key="normal" title="NEXT">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="onNextTapped:" destination="S8m-9S-9UV" eventType="touchUpInside" id="iDe-GA-FYd"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lPR-8i-ovt">
                                 <rect key="frame" x="4" y="40" width="50" height="40"/>
@@ -221,6 +233,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Isr-sB-pzD"/>
                     </view>
+                    <connections>
+                        <outlet property="btnNext" destination="9a9-ik-y1M" id="QDD-ct-uBH"/>
+                        <segue destination="wdz-fK-1m6" kind="show" identifier="fromLeagueToSkill" id="HDr-Lf-T8X"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TjR-Cv-UBi" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="Ena-XR-Jkj" userLabel="Exit" sceneMemberID="exit"/>
@@ -270,7 +286,7 @@
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="ipi-a2-xuE"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                        <state key="normal" title="Men">
+                                        <state key="normal" title="Beginner">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
@@ -282,7 +298,7 @@
                                             <constraint firstAttribute="height" constant="50" id="Xam-6j-t85"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                        <state key="normal" title="Women">
+                                        <state key="normal" title="Baller">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
